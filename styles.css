@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ======== ����� (�� ��������������� � HTML, ��� �������� ��� ���� �������) ======== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* ======== ������ 1: ������ ������ �������� ======== */
+.section1 {
+  min-height: 840px;
+  width: 100%;
+  color: white;
+  background: #004F44;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: #004F44;
+  color: white;
+}
+
+/* ˳��� ���� �������� */
+.nav-left a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* ����������� ������� */
+.nav-center img {
+  height: 86px;
+  width: 119px;
+}
+
+/* ���� ������ */
+.nav-right a {
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-right img {
+  max-height: 24px;
+  max-width: 54px;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background: #fff;
+  color: #084c3d;
+  padding: 12px 24px;
+  text-decoration: none;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-cards {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-card {
+  width: 150px;
+  height: 200px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.small-card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.large-card {
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #066a56;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.new {
+  background: #066a56;
+}
+
+.popular {
+  background: #066a56;
+}
+
+.featured {
+  background: #066a56;
+}
+
+.large-card .card-text {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(8, 76, 61, 0.9), transparent);
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.large-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.large-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.large-card .btn {
+  background: #fff;
+  color: #084c3d;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+
+
+/* ======== ���� ��� ������ 2�6 ======== */
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+  width: 100%;
+}
+
+/* ======== ������ 2: ������ (Featured) ======== */
+.section2 {
+  background: #FFFFFF;
+  padding-bottom: 40px;
+}
+
+.section2-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-family: 'Steppe', sans-serif;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 20px 40px;
+}
+
+.product-card {
+  width: 279px;
+  text-align: center;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #F9F9F9;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 279px;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.price {
+  font-family: 'Steppe', sans-serif;
+  font-size: 16px;
+  color: #004F44;
+  margin-top: 8px;
+}
+
+/* ======== ������ 3: ����� ======== */
+.section3 {
+  height: 229px;
+  background: #F3FFFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 1010px;
+  height: 59px;
+  color: #004F44;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* ======== ������ 4: ������� (Colorful New Arrivals) ======== */
+.section4 {
+  height: 700px;
+  background: #FFFFFF;
+}
+
+.section4-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-family: 'Steppe', sans-serif;
+}
+
+.section4 nav {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-text,
+.right-text {
+  color: #004F44;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ======== ������ 5: ϳ������� ��� ������ ======== */
+.section5 {
+  background: #F3FFFC;
+  height: 723px;
+}
+
+.section5 .left-text {
+  padding-left: 40px;
+  color: #004F44;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Steppe', sans-serif;
+}
+
+.section5 nav {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ======== ������ 6: ����� ��� ��������� ���������� ======== */
+.section6 {
+  height: 939px;
+  background: #FFFFFF;
+   display: flex;
+  justify-content: center; /* ������ �� ���������� */
+}
+
+.section6 {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* �������� ���� � ���� */
+  padding: 20px 0;
+}
+
+.image-text-wrapper {
+  position: relative;
+  width: 1154px;   /* ������ �� � ���� */
+  height: 346px;  /* ������ �� � ���� */
+}
+
+.section6-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 30px; /* ��� ���� �������� ������� �� ����� ���� */
+  transform: translateY(-50%); /* ���� ����������� ����������� */
+  color: #9C6955;
+  text-align: left;
+  font-family: 'Steppe', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+  margin-bottom: 750px; 
+}
+.map {
+  display: flex;
+  justify-content: center;      /* ������ ���������� �� ���������� */
+  margin-top: 500px;           /* ������ ������ */
+}
+
+.button-img {
+  width: 1154px;
+  height: 346px;
+}
